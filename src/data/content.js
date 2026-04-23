@@ -18,19 +18,19 @@ export const domainTabs = [
     id: "background",
     title: "Background",
     content:
-      "Dementia and mild cognitive impairment often evolve gradually, making early identification difficult in busy clinics and community care settings. Conventional assessments can miss subtle changes in behavior, speech, or motor patterns during early stages.",
+      "Dementia and mild cognitive impairment often evolve gradually, making early identification difficult in busy clinics and community care settings. Conventional assessments can miss subtle changes in behavior, speech, motor patterns, or early structural brain changes, especially during the initial stages.",
   },
   {
     id: "gap",
     title: "Research Gap",
     content:
-      "Many current screening solutions focus on one data source only, such as questionnaires, speech, or imaging. There is limited research translation into affordable, web-accessible platforms that combine multiple behavioral and health signals for practical decision support.",
+      "Many current screening solutions focus on one data source only, such as questionnaires, speech, handwriting, or imaging. There is limited research translation into affordable, web-accessible platforms that integrate behavioral, cognitive, health, and MRI-based evidence for practical clinical decision support.",
   },
   {
     id: "problem",
     title: "Research Problem",
     content:
-      "How can a multimodal AI platform be designed to support earlier and more accessible dementia risk screening by jointly analyzing speech behavior, handwriting dynamics, cognitive performance, and health-related indicators?",
+      "How can a multimodal AI platform be designed to support earlier and more accessible dementia risk screening by jointly analyzing speech behavior, handwriting dynamics, cognitive performance, health-related indicators, and optional MRI-based dementia staging with explainable outputs?",
   },
   {
     id: "objectives",
@@ -40,6 +40,7 @@ export const domainTabs = [
       "Develop a handwriting behavior analysis component.",
       "Integrate health, lifestyle, and cognitive indicators.",
       "Combine multimodal outputs into a unified dementia risk workflow.",
+      "Develop an MRI-based dementia staging component using deep learning with explainable heatmaps for clinician decision support.",
       "Deliver an accessible web-based research prototype.",
     ],
   },
@@ -59,12 +60,12 @@ export const aboutCards = [
   {
     title: "Smart Health & Cognitive Assessment",
     text: "Integrates wearable trends, questionnaires, and cognitive tasks into a structured feature pipeline.",
-    emoji: "🧠",
+    emoji: "🩺",
   },
   {
-    title: "Multimodal Decision Support",
-    text: "Combines outputs from all modules to provide richer dementia risk screening insight for research use.",
-    emoji: "🔗",
+    title: "Dementia Stage Classification Using MRI Scans",
+    text: "Analyzes MRI scans to predict dementia stage (Non, Very Mild, Mild, Moderate) with confidence and visual explanations.",
+    emoji: "🧠",
   },
 ];
 
@@ -85,9 +86,9 @@ export const researchHighlights = [
     emoji: "🩺",
   },
   {
-    title: "Predictive Risk Modeling",
-    text: "Machine learning models generate research-oriented screening insights from integrated multimodal inputs.",
-    emoji: "🤖",
+    title: "MRI Dementia Staging",
+    text: "Deep learning analyzes brain MRI scans to classify dementia stage and generate explainable heatmaps highlighting key regions.",
+    emoji: "🧠",
   },
 ];
 
@@ -108,10 +109,10 @@ export const keyFeatures = [
       "Processes wearable, questionnaire, and cognitive assessment data for broader dementia risk profiling.",
   },
   {
-    title: "Result Interpretation Dashboard",
+    title: "MRI Dementia Staging",
     description:
-      "Combines outputs from all components into a clear, research-friendly multimodal screening summary.",
-  },
+      "Analyzes structural brain MRI scans using deep learning to classify dementia stage and provide explainable heatmap outputs.",
+},
 ];
 
 export const technologies = [

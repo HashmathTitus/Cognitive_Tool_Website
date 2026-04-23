@@ -8,7 +8,7 @@ export default function AboutSection() {
         <SectionHeading
           icon="🧬"
           title="About The Project"
-          subtitle="Our project is an AI-driven cognitive screening platform designed to support early identification of dementia-related risk using multiple data sources. The system combines speech behavior analysis, handwriting analysis, cognitive assessments, and health/lifestyle indicators to produce a comprehensive screening outcome."
+          subtitle="Our project is an AI-driven cognitive screening platform designed to support early identification of dementia-related risk using multiple data sources. The system combines speech behavior analysis, handwriting analysis, cognitive assessments, health/lifestyle indicators, and MRI-based dementia staging with explainable heatmaps to produce a comprehensive screening outcome."
         />
 
         <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">

@@ -25,8 +25,8 @@ export default function HeroSection() {
 
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">
               A multimodal research platform that analyzes speech, handwriting, cognitive performance,
-              lifestyle, and health-related indicators to support early dementia risk screening and
-              monitoring.
+              lifestyle, health-related indicators, and MRI-based dementia staging to support early risk
+              screening and monitoring.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
