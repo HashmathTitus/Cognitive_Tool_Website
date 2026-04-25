@@ -11,6 +11,7 @@ export const navItems = [
   { id: "demo", label: "Demo" },
   { id: "links", label: "Links" },
   { id: "references", label: "References" },
+  { id: "contact", label: "Contact" },
 ];
 
 export const domainTabs = [
