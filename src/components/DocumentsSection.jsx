@@ -27,10 +27,20 @@ export default function DocumentsSection() {
                       <p className="font-semibold text-slate-700">{doc.title}</p>
                     </div>
                     <div className="mt-3 flex gap-4 text-sm font-semibold text-mint-700">
-                      <a href={doc.viewUrl} className="hover:text-mint-900">
+                      <a
+                        href={doc.viewUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-mint-900"
+                      >
                         View
                       </a>
-                      <a href={doc.downloadUrl} className="hover:text-mint-900">
+                      <a
+                        href={doc.downloadUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-mint-900"
+                      >
                         Download
                       </a>
                     </div>

@@ -1,3 +1,10 @@
+import coSupervisorImage from "./co-supervisor.png";
+import himeshaImage from "./himesha.jpeg";
+import malindiImage from "./malindi.jpeg";
+import natheerImage from "./natheer.jpg";
+import piruthiviImage from "./piruthuvi.jpeg";
+import supervisorImage from "./supervisor.png";
+
 export const navItems = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
@@ -10,7 +17,6 @@ export const navItems = [
   { id: "team", label: "Team" },
   { id: "demo", label: "Demo" },
   { id: "links", label: "Links" },
-  { id: "references", label: "References" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -182,102 +188,107 @@ export const milestones = [
   },
 ];
 
+const docsLink = "https://drive.google.com/drive/folders/1M83ILyagITf730RA_cbS1vCKqjRLyE4v?usp=sharing";
+
 export const documentGroups = [
   {
     group: "Proposal Documents",
     docs: [
       {
         title: "Project Proposal",
-        viewUrl: "#",
-        downloadUrl: "#",
+        viewUrl: docsLink,
+        downloadUrl: docsLink,
       },
       {
         title: "Proposal Slide Deck",
-        viewUrl: "#",
-        downloadUrl: "#",
+        viewUrl: docsLink,
+        downloadUrl: docsLink,
       },
     ],
   },
   {
     group: "Final Reports",
     docs: [
-      { title: "Final Thesis Report", viewUrl: "#", downloadUrl: "#" },
-      { title: "System Design Appendix", viewUrl: "#", downloadUrl: "#" },
+      { title: "Final Thesis Report", viewUrl: docsLink, downloadUrl: docsLink },
+      { title: "System Design Appendix", viewUrl: docsLink, downloadUrl: docsLink },
     ],
   },
   {
     group: "Presentations",
     docs: [
-      { title: "Progress Presentation 1", viewUrl: "#", downloadUrl: "#" },
-      { title: "Progress Presentation 2", viewUrl: "#", downloadUrl: "#" },
-      { title: "Final Viva Slides", viewUrl: "#", downloadUrl: "#" },
+      { title: "Progress Presentation 1", viewUrl: docsLink, downloadUrl: docsLink },
+      { title: "Progress Presentation 2", viewUrl: docsLink, downloadUrl: docsLink },
+      { title: "Final Viva Slides", viewUrl: docsLink, downloadUrl: docsLink },
     ],
   },
   {
     group: "Research Paper",
     docs: [
-      { title: "Conference Paper Draft", viewUrl: "#", downloadUrl: "#" },
-      { title: "Camera-ready Manuscript", viewUrl: "#", downloadUrl: "#" },
+      { title: "Conference Paper Draft", viewUrl: docsLink, downloadUrl: docsLink },
+      { title: "Camera-ready Manuscript", viewUrl: docsLink, downloadUrl: docsLink },
     ],
   },
   {
     group: "Deployment Documents",
     docs: [
-      { title: "Deployment Guide", viewUrl: "#", downloadUrl: "#" },
-      { title: "API Documentation", viewUrl: "#", downloadUrl: "#" },
+      { title: "Deployment Guide", viewUrl: docsLink, downloadUrl: docsLink },
+      { title: "API Documentation", viewUrl: docsLink, downloadUrl: docsLink },
     ],
   },
   {
     group: "Registration / Other Docs",
     docs: [
-      { title: "Topic Registration", viewUrl: "#", downloadUrl: "#" },
-      { title: "Ethics and Consent Notes", viewUrl: "#", downloadUrl: "#" },
+      { title: "Topic Registration", viewUrl: docsLink, downloadUrl: docsLink },
+      { title: "Ethics and Consent Notes", viewUrl: docsLink, downloadUrl: docsLink },
     ],
+  },
+];
+
+export const supervisors = [
+  {
+    name: "Ms. Manori Gamage",
+    role: "Supervisor",
+    email: "manori.g@sliit.lk",
+    initials: "MG",
+    image: supervisorImage,
+  },
+  {
+    name: "Ms. Kaushalya Rajapakse",
+    role: "Co-Supervisor",
+    email: "kaushalya.r@sliit.lk",
+    initials: "KR",
+    image: coSupervisorImage,
   },
 ];
 
 export const teamMembers = [
   {
-    name: "Dr. Supervisor Name",
-    role: "Supervisor",
-    email: "supervisor@university.edu",
-    avatar:
-      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=320&q=80",
+    name: "Senaratne H D",
+    role: "Team Member",
+    email: "IT22358998@my.sliit.lk",
+    initials: "SH",
+    image: himeshaImage,
   },
   {
-    name: "Dr. Co-Supervisor Name",
-    role: "Co-Supervisor",
-    email: "co.supervisor@university.edu",
-    avatar:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=320&q=80",
+    name: "Dissanayake M.P.S.",
+    role: "Team Member",
+    email: "IT22901644@my.sliit.lk",
+    initials: "DM",
+    image: malindiImage,
   },
   {
-    name: "Team Leader Name",
-    role: "Team Leader",
-    email: "team.leader@university.edu",
-    avatar:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=320&q=80",
+    name: "Piruthivi K",
+    role: "Team Member",
+    email: "IT22358820@my.sliit.lk",
+    initials: "PK",
+    image: piruthiviImage,
   },
   {
-    name: "Member One",
-    role: "Member",
-    email: "member1@university.edu",
-    avatar:
-      "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=320&q=80",
-  },
-  {
-    name: "Member Two",
-    role: "Member",
-    email: "member2@university.edu",
-    avatar:
-      "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=320&q=80",
-  },
-  {
-    name: "Member Three",
-    role: "Member",
-    email: "member3@university.edu",
-    avatar:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=320&q=80",
+    name: "Natheer H A H",
+    role: "Team Member",
+    email: "IT22888952@my.sliit.lk",
+    initials: "NH",
+    image: natheerImage,
   },
 ];
 
@@ -285,7 +296,7 @@ export const projectLinks = [
   {
     title: "GitHub Repository",
     description: "Source code and version history",
-    href: "#",
+    href: "https://github.com/HimeshaSenaratne/research_proj_cognicare.git",
     cta: "View Repository",
   },
   {

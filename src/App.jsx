@@ -10,7 +10,6 @@ import LinksSection from "./components/LinksSection";
 import MilestonesSection from "./components/MilestonesSection";
 import Navbar from "./components/Navbar";
 import ContactSection from "./components/ContactSection";
-import ReferencesSection from "./components/ReferencesSection";
 import ResearchDomainSection from "./components/ResearchDomainSection";
 import TeamSection from "./components/TeamSection";
 import ToolsSection from "./components/ToolsSection";
@@ -64,7 +63,6 @@ export default function App() {
         <TeamSection />
         <DemoSection />
         <LinksSection />
-        <ReferencesSection />
         <ContactSection />
       </main>
       <Footer />

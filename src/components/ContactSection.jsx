@@ -1,36 +1,25 @@
-import { Mail, MapPin, Phone, Github, UserRound } from "lucide-react";
+import { Mail, MapPin, Github } from "lucide-react";
 import { useState } from "react";
 import SectionHeading from "./SectionHeading";
 
 const contactItems = [
   {
     label: "Email",
-    value: "research@cognicare.lk",
-    href: "mailto:research@cognicare.lk",
+    value: "cognicare7@gmail.com",
+    href: "mailto:cognicare7@gmail.com",
     icon: Mail,
   },
-  {
-    label: "Location",
-    value: "Faculty of Computing, SLIIT, Sri Lanka",
-    icon: MapPin,
-  },
-  {
-    label: "Phone",
-    value: "+94 XX XXX XXXX",
-    icon: Phone,
-  },
-  {
-    label: "GitHub",
-    value: "Project Repository Link",
-    href: "#",
-    icon: Github,
-  },
-  {
-    label: "Supervisor Contact",
-    value: "supervisor email placeholder",
-    href: "mailto:supervisor email placeholder",
-    icon: UserRound,
-  },
+  // {
+  //   label: "Location",
+  //   value: "Sri Lanka Institute of Information Technology, Malabe",
+  //   icon: MapPin,
+  // },
+  // {
+  //   label: "GitHub Repository",
+  //   value: "https://github.com/HimeshaSenaratne/research_proj_cognicare.git",
+  //   href: "https://github.com/HimeshaSenaratne/research_proj_cognicare.git",
+  //   icon: Github,
+  // },
 ];
 
 const initialForm = {
@@ -53,6 +42,21 @@ export default function ContactSection() {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(formData);
+
+    const body = [
+      `Full Name: ${formData.fullName}`,
+      `Email: ${formData.email}`,
+      `Institution / Organization: ${formData.institution || "Not provided"}`,
+      "",
+      "Message:",
+      formData.message,
+    ].join("\n");
+
+    const mailtoUrl = `mailto:cognicare7@gmail.com?subject=${encodeURIComponent(
+      formData.subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoUrl;
     setSubmitted(true);
     setFormData(initialForm);
   };
@@ -87,6 +91,8 @@ export default function ContactSection() {
                       {item.href ? (
                         <a
                           href={item.href}
+                          target={item.href.startsWith("http") ? "_blank" : undefined}
+                          rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
                           className="mt-1 inline-block text-sm leading-relaxed text-slate-600 transition hover:text-mint-700 sm:text-base"
                         >
                           {item.value}
