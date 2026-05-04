@@ -14,7 +14,7 @@ export default function DemoSection() {
           <div className="aspect-video overflow-hidden rounded-xl border border-mint-100">
             <iframe
               className="h-full w-full"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              src="https://drive.google.com/file/d/1z6sMumv7Su39D8NcRBagmj8LK_odRXIb/preview"
               title="CogniCare Demo Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
