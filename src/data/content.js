@@ -4,6 +4,15 @@ import malindiImage from "./malindi.jpeg";
 import natheerImage from "./natheer.jpg";
 import piruthiviImage from "./piruthuvi.jpeg";
 import supervisorImage from "./supervisor.png";
+import projectProposal from "./Project_Proposal.pdf";
+import topicAssessmentForm from "./TopicAssessmentForm.pdf";
+import pp1 from "./PP1.pdf";
+import pp2 from "./PP2.pdf";
+import ppFinal from "./PP.pdf";
+import finalThesisReport from "./finalthesisreport.pdf";
+import systemDesignAppendix from "./systemdesignapp.pdf";
+import deploymentGuide from "./Deployment_guide.pdf";
+import conferencePaper from "./conferencepaper.pdf";
 
 export const navItems = [
   { id: "home", label: "Home" },
@@ -188,60 +197,64 @@ export const milestones = [
   },
 ];
 
-const docsLink = "https://drive.google.com/drive/folders/1M83ILyagITf730RA_cbS1vCKqjRLyE4v?usp=sharing";
-
 export const documentGroups = [
   {
     group: "Proposal Documents",
     docs: [
       {
         title: "Project Proposal",
-        viewUrl: docsLink,
-        downloadUrl: docsLink,
+        viewUrl: projectProposal,
+        downloadUrl: projectProposal,
       },
       {
-        title: "Proposal Slide Deck",
-        viewUrl: docsLink,
-        downloadUrl: docsLink,
+        title: "Topic Assessment Form",
+        viewUrl: topicAssessmentForm,
+        downloadUrl: topicAssessmentForm,
       },
     ],
   },
   {
     group: "Final Reports",
     docs: [
-      { title: "Final Thesis Report", viewUrl: docsLink, downloadUrl: docsLink },
-      { title: "System Design Appendix", viewUrl: docsLink, downloadUrl: docsLink },
+      { title: "Final Thesis Report", viewUrl: finalThesisReport, downloadUrl: finalThesisReport },
+      { title: "System Design Appendix", viewUrl: systemDesignAppendix, downloadUrl: systemDesignAppendix },
     ],
   },
   {
     group: "Presentations",
     docs: [
-      { title: "Progress Presentation 1", viewUrl: docsLink, downloadUrl: docsLink },
-      { title: "Progress Presentation 2", viewUrl: docsLink, downloadUrl: docsLink },
-      { title: "Final Viva Slides", viewUrl: docsLink, downloadUrl: docsLink },
+      { title: "Progress Presentation 1", viewUrl: pp1, downloadUrl: pp1 },
+      { title: "Progress Presentation 2", viewUrl: pp2, downloadUrl: pp2 },
+      { title: "Final Viva Slides", viewUrl: ppFinal, downloadUrl: ppFinal },
     ],
   },
   {
     group: "Research Paper",
     docs: [
-      { title: "Conference Paper Draft", viewUrl: docsLink, downloadUrl: docsLink },
-      { title: "Camera-ready Manuscript", viewUrl: docsLink, downloadUrl: docsLink },
+      { title: "Conference Paper Draft", viewUrl: conferencePaper, downloadUrl: conferencePaper },
+      {
+        title: "Camera-ready Manuscript",
+        // External SharePoint view-only link
+        viewUrl:
+          "https://mysliit.sharepoint.com/:v:/s/CDAPSubmissionCloud/IQBq5gyAwDrxR7kJPefblkAjAbfa06xb7CY2WqFEbB2UYCQ?e=MeeI4h&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D",
+        downloadUrl: null,
+      },
     ],
   },
   {
     group: "Deployment Documents",
     docs: [
-      { title: "Deployment Guide", viewUrl: docsLink, downloadUrl: docsLink },
-      { title: "API Documentation", viewUrl: docsLink, downloadUrl: docsLink },
+      { title: "Deployment Guide", viewUrl: deploymentGuide, downloadUrl: deploymentGuide },
+      { title: "API Documentation (Coming Soon)", viewUrl: null, downloadUrl: null, comingSoon: true },
     ],
   },
-  {
-    group: "Registration / Other Docs",
-    docs: [
-      { title: "Topic Registration", viewUrl: docsLink, downloadUrl: docsLink },
-      { title: "Ethics and Consent Notes", viewUrl: docsLink, downloadUrl: docsLink },
-    ],
-  },
+  // {
+  //   group: "Registration / Other Docs",
+  //   docs: [
+  //     { title: "Topic Registration", viewUrl: docsLink, downloadUrl: docsLink },
+  //     { title: "Ethics and Consent Notes", viewUrl: docsLink, downloadUrl: docsLink },
+  //   ],
+  // },
 ];
 
 export const supervisors = [

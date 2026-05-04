@@ -27,22 +27,24 @@ export default function DocumentsSection() {
                       <p className="font-semibold text-slate-700">{doc.title}</p>
                     </div>
                     <div className="mt-3 flex gap-4 text-sm font-semibold text-mint-700">
-                      <a
-                        href={doc.viewUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-mint-900"
-                      >
-                        View
-                      </a>
-                      <a
-                        href={doc.downloadUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-mint-900"
-                      >
-                        Download
-                      </a>
+                      {doc.viewUrl ? (
+                        <a
+                          href={doc.viewUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:text-mint-900"
+                        >
+                          View
+                        </a>
+                      ) : doc.comingSoon ? (
+                        <span className="italic text-slate-500">Coming Soon</span>
+                      ) : null}
+
+                      {doc.downloadUrl ? (
+                        <a href={doc.downloadUrl} download className="hover:text-mint-900">
+                          Download
+                        </a>
+                      ) : null}
                     </div>
                   </div>
                 ))}
